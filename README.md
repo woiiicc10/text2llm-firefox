@@ -56,4 +56,4 @@ Compress-Archive -Path .\manifest.json, .\background.js -DestinationPath .\llm-s
 
 ## 版本
 
-当前版本：1.0
+当前版本：1.0.2
