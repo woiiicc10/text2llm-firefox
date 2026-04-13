@@ -9,6 +9,14 @@
 - 当前支持平台：豆包、DeepSeek。
 - 选择某个模型发送后，会自动记为默认模型。
 
+## 安装
+
+### Firefox 官方下载
+
+点击下方链接从 Firefox 附加组件商店安装：
+
+[在 Firefox 中安装](https://addons.mozilla.org/zh-CN/firefox/addon/%E9%80%89%E4%B8%AD%E6%96%87%E5%AD%97%E5%8F%91%E9%80%81%E5%88%B0%E5%A4%A7%E6%A8%A1%E5%9E%8B/?utm_content=addons-manager-reviews-link&utm_medium=firefox-browser&utm_source=firefox-browser)
+
 ## 使用方式
 
 1. 在网页中选中一段文本。
@@ -16,29 +24,6 @@
    - 直接发送到默认模型（xxx）
    - 选择模型发送... -> 目标模型
 3. 扩展会自动打开对应模型网页并尝试填入选中文本。
-
-## 本地安装（开发者模式）
-
-### Firefox 临时加载
-
-1. 打开 Firefox，访问 about:debugging。
-2. 点击 此 Firefox。
-3. 点击 临时载入附加组件。
-4. 选择本项目中的 manifest.json 文件。
-
-说明：临时加载的扩展在浏览器重启后需要重新加载。
-
-## 打包发布
-
-### 生成 zip
-
-在项目目录执行：
-
-```powershell
-Compress-Archive -Path .\manifest.json, .\background.js -DestinationPath .\llm-sender-v1.0.0.zip -Force
-```
-
-如果你后续新增图标或其它文件，请一并加入打包列表。
 
 ## 权限说明
 
